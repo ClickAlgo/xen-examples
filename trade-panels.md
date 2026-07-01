@@ -172,6 +172,16 @@ When designing trading panels, clearly define:
 
 The more precise the UI description, the better the generated panel.
 
+DRAGGABLE PANEL REQUIREMENT
+
+If you want a panel or dashboard to be draggable on the chart, you MUST explicitly include the phrase:
+
+"make the panel draggable on the chart"
+
+This will trigger Xen RAG to inject draggable panel behaviour automatically.
+
+If this is not included, the default behaviour will be a fixed-position panel using the selected position parameter (TopLeft, TopRight, BottomLeft, BottomRight).
+
 ---
 
 ## Notes
