@@ -1,16 +1,16 @@
-# cTrader Dashboard Indicator Examples
+# cTrader Dashboard Indicator Example
 
-Example prompts for building cTrader dashboard indicators with Xen AI.
+Example prompt for building a professional cTrader dashboard indicator with Xen AI.
 
-These prompts are designed for traders who want visual dashboards, market status panels, account summaries, or multi-symbol indicator displays inside cTrader without manually writing C# code.
+This example creates a chart-based account statistics dashboard using cTrader controls. It is designed as a simple first version that can later be expanded with more statistics, sections, alerts, or visual styling.
 
 ---
 
-## Example 1 - Multi-Symbol Trend Dashboard
+## Trading Statistics Dashboard
 
 ### What it builds
 
-A cTrader indicator dashboard that displays the current trend direction across multiple symbols using moving averages.
+A cTrader indicator named **Trading Statistics Dashboard** that displays key account statistics in a modern dashboard panel on the chart.
 
 ### Difficulty
 
@@ -19,122 +19,60 @@ Beginner
 ### Prompt
 
 ```text
-Build a cTrader indicator dashboard that shows the trend direction for multiple symbols.
+Create a professional cTrader indicator named "Trading Statistics Dashboard".
+
+The indicator should display a modern dashboard in the top right corner of the chart using cTrader controls.
+
+The dashboard should be designed so additional statistics can easily be added in future versions.
+
+For this first version, focus only on creating the dashboard layout and displaying the following account statistics:
+
+- Account Balance
+- Account Equity
+- Free Margin
+- Margin Level
+- Open Positions
+- Pending Orders
 
 Requirements:
 
-- Display the following symbols: EURUSD, GBPUSD, USDJPY, XAUUSD and US30.
-- Use a 50-period EMA and 200-period EMA to determine trend direction.
-- If EMA 50 is above EMA 200, show Bullish.
-- If EMA 50 is below EMA 200, show Bearish.
-- Display each symbol in a clean dashboard table.
-- Columns should include Symbol, EMA 50, EMA 200 and Trend.
-- Use green text for Bullish and red text for Bearish.
-- Place the dashboard in the top-left corner of the chart.
-- Add input parameters for the EMA periods, symbols list and dashboard position.
-- Make the code compatible with the latest cTrader Automate API.
+- Use a clean professional appearance like a Bloomberg dashboard
+- Automatically resize based on the content.
+- Allow the dashboard position to be changed using parameters (Top Left, Top Right, Bottom Left, Bottom Right).
+- Display labels in one column and values in a second aligned column.
+- Refresh automatically whenever account information changes.
+- Follow official cTrader API best practices.
+- Keep the code well structured and modular so additional dashboard sections can easily be added later.
 ```
 
 ### Expected result
 
-A visual dashboard indicator showing several symbols and their current EMA trend status.
+A clean account statistics dashboard displayed on the cTrader chart, with labels and values aligned in two columns. The first version focuses on layout, structure, and live account statistics rather than trading logic.
 
----
-
-## Example 2 - RSI Market Strength Dashboard
-
-### What it builds
-
-A dashboard indicator showing RSI values and overbought/oversold status across multiple symbols.
-
-### Difficulty
-
-Beginner
-
-### Prompt
+### Suggested follow-up prompts
 
 ```text
-Build a cTrader dashboard indicator that monitors RSI values across multiple symbols.
-
-Requirements:
-
-- Use RSI period 14 by default.
-- Allow the user to enter a comma-separated symbol list.
-- Display Symbol, RSI Value and Status.
-- If RSI is above 70, show Overbought.
-- If RSI is below 30, show Oversold.
-- Otherwise show Neutral.
-- Use red for Overbought, green for Oversold and gray for Neutral.
-- Refresh the dashboard on each bar.
-- Add input parameters for RSI period, overbought level, oversold level, symbols and dashboard position.
-- Keep the dashboard simple, clean and readable.
+Add daily profit and loss, weekly profit and loss, and monthly profit and loss to the dashboard.
 ```
-
-### Expected result
-
-A compact RSI dashboard for quickly checking market conditions across selected symbols.
-
----
-
-## Example 3 - Account Risk Dashboard
-
-### What it builds
-
-A cTrader indicator that displays account and open-position risk information directly on the chart.
-
-### Difficulty
-
-Intermediate
-
-### Prompt
 
 ```text
-Build a cTrader dashboard indicator that displays account risk information.
-
-Requirements:
-
-- Show account balance.
-- Show account equity.
-- Show free margin.
-- Show margin level.
-- Show number of open positions.
-- Show total unrealised profit or loss.
-- Show total volume of open positions.
-- Display the dashboard as a clean panel on the chart.
-- Use green for positive profit and red for negative profit.
-- Add input parameters for dashboard position, font size and panel opacity.
-- Update the dashboard in real time.
-- Do not place trades. This must be an indicator only.
+Add colour highlighting so positive values appear green and negative values appear red.
 ```
-
-### Expected result
-
-A non-trading dashboard for monitoring account exposure and open-position status.
-
----
-
-## Tips for Better Dashboard Prompts
-
-* State whether you want an indicator, cBot, plugin, dashboard or trading panel.
-* Describe every column or value you want displayed.
-* Mention colours only when they matter.
-* Include where the dashboard should appear on the chart.
-* Say whether it should update on every tick or every bar.
-* Upload a mock-up image if the layout is important.
-
----
-
-## Related Videos
-
-Add YouTube links here when available.
 
 ```text
-Video: Build a Multi-Symbol Trend Dashboard with Xen AI
-Link: https://youtube.com/your-video-link
+Add a collapsible section for open position statistics.
 ```
+
+---
+
+## Tips
+
+When creating dashboard indicators, describe the layout clearly. Include the position, columns, values, colours, refresh behaviour, and whether the dashboard should be an indicator, cBot, plugin, or trading panel.
+
+For more complex dashboards, upload a mock-up image to Xen AI and describe how the layout should behave.
 
 ---
 
 ## Notes
 
-These examples are for educational use. Always test generated code in cTrader before using it on a live trading account.
+This example is for educational use. Always build and test generated code in cTrader before using it on a live trading account.
