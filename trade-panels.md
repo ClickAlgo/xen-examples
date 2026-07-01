@@ -172,7 +172,7 @@ When designing trading panels, clearly define:
 
 The more precise the UI description, the better the generated panel.
 
-DRAGGABLE PANEL (RAG TRIGGER)
+DRAGGABLE PANEL
 
 To enable a draggable panel on the chart, the user MUST write exactly:
 
