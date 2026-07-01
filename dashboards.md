@@ -345,15 +345,16 @@ When creating dashboard indicators, describe the layout clearly. Include the das
 
 For more complex dashboards, upload a mock-up image to Xen AI and describe how the layout should behave.
 
-DRAGGABLE PANEL REQUIREMENT
+DRAGGABLE PANEL
 
-If you want a panel or dashboard to be draggable on the chart, you MUST explicitly include the phrase:
+To enable a draggable panel on the chart, the user MUST write exactly:
 
 "make the panel draggable on the chart"
 
-This will trigger Xen RAG to inject draggable panel behaviour automatically.
+No additional text, requirements, or explanations should be included.
 
-If this is not included, the default behaviour will be a fixed-position panel using the selected position parameter (TopLeft, TopRight, BottomLeft, BottomRight).
+This phrase is used as a direct RAG key to inject draggable panel behaviour into the generated code.
+If the phrase is missing, the panel must remain fixed using the selected position parameter (TopLeft, TopRight, BottomLeft, BottomRight).
 
 ---
 
