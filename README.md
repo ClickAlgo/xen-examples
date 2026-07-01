@@ -1,4 +1,4 @@
-# Xen AI Examples
+# Xen AI User Prompt Examples
 
 Official example prompts for **Xen AI**, designed to help traders and developers build professional **cTrader cBots, indicators, dashboards, trading panels and plugins** using plain English.
 
