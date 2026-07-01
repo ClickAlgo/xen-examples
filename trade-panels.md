@@ -176,7 +176,7 @@ DRAGGABLE PANEL REQUIREMENT
 
 If you want a panel or dashboard to be draggable on the chart, you MUST explicitly include the phrase:
 
-"make the panel draggable on the chart"
+"make the panel draggable on the chart" ** DO THIS AS A STANDALONE SEPARATE REQUEST.
 
 This will trigger Xen RAG to inject draggable panel behaviour automatically.
 
