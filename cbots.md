@@ -6,6 +6,23 @@ These prompts are designed to help you create complete trading systems using pla
 
 ---
 
+## Recommended Workflow
+
+For the best results, build your cBot in small steps rather than asking Xen to generate a complete trading system in a single prompt.
+
+A recommended workflow is:
+
+1. Build the core entry and exit logic.
+2. Test the cBot in cTrader.
+3. Add risk management, such as stop loss, take profit and position sizing.
+4. Test again.
+5. Add filters, such as trend, session or volatility.
+6. Continue refining and testing until the strategy is complete.
+
+Building and testing incrementally makes prompts simpler, produces more reliable code and makes it much easier to identify and fix any issues.
+
+---
+
 ## Moving Average Crossover Strategy
 
 ### What it builds
