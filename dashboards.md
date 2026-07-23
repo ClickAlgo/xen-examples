@@ -285,6 +285,75 @@ A multi-symbol market dashboard that gives the user a quick overview of spread, 
 
 ---
 
+## Example 6 - Multi Timeframe Trend Matrix Dashboard
+
+### What it builds
+
+A cTrader indicator dashboard that analyses trend direction and strength across multiple timeframes using EMA calculations, weighted scoring, and alignment analysis.
+
+### Difficulty
+
+Advanced
+
+### Suggested theme
+
+Professional dark trading desk dashboard.
+
+### Prompt
+
+```text
+Create a new cTrader Algo indicator project named "Multi Timeframe Trend Matrix".
+
+Implement only the initial dashboard layout and multi-timeframe data foundation in this iteration.
+
+Create a fixed chart dashboard using cTrader controls with a clean, compact, professional dark trading-desk appearance.
+
+Display a title bar reading:
+
+Multi Timeframe Trend Matrix
+
+Create one row for each of these timeframes:
+
+- M1
+- M5
+- M15
+- M30
+- H1
+- H4
+- Daily
+- Weekly
+- Monthly
+
+Create the following columns:
+
+- Timeframe
+- Trend
+- Strength
+
+For this first iteration:
+
+- Load market-series data for the current chart symbol for every listed timeframe.
+- Display "Pending" in the Trend column.
+- Display "--" in the Strength column.
+- Do not calculate trend direction, strength, weighted scores or alignment yet.
+- Show a clear neutral message instead of failing if data for a timeframe is unavailable.
+
+Add parameters for:
+
+- Dashboard position: Top Left, Top Right, Bottom Left or Bottom Right
+- Font size, default 12
+- Dashboard opacity
+
+Use Top Right as the default dashboard position.
+
+This indicator must only analyse and display information. It must not place, modify or close trades.
+
+Keep the implementation modular so calculations can be added in later iterations.
+
+Return one complete, compile-ready C# file. Stop after completing this iteration.
+
+---
+
 ## Theme Ideas for Dashboard Prompts
 
 You can improve dashboard results by describing the visual style clearly.
